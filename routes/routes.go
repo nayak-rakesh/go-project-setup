@@ -6,9 +6,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/nayak-rakesh/go-project-setup/config"
 	"github.com/nayak-rakesh/go-project-setup/database/postgres"
-	_userHandler "github.com/nayak-rakesh/go-project-setup/handler"
-	_userRepo "github.com/nayak-rakesh/go-project-setup/repository/postgres"
-	_userService "github.com/nayak-rakesh/go-project-setup/service"
+	_userHandler "github.com/nayak-rakesh/go-project-setup/internal/user/handler/http"
+	_userRepo "github.com/nayak-rakesh/go-project-setup/internal/user/repository/postgres"
+	_userService "github.com/nayak-rakesh/go-project-setup/internal/user/service"
 )
 
 func routes() *gin.Engine {
